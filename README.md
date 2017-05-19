@@ -10,6 +10,6 @@ Turma 2017
 - [Aula 03](https://www.slideshare.net/renatosousafilho/curso-programao-web-com-ruby-on-rails-aula-03)
 
 ### Professor
-Renato Filho
-[GitHub](github.com/renatosousafilho)
-[LinkedIn](https://www.linkedin.com/in/renatosousafilho/)
+Renato Filho,
+- [GitHub](github.com/renatosousafilho)
+- [LinkedIn](https://www.linkedin.com/in/renatosousafilho/)
