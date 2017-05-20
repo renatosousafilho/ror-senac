@@ -10,6 +10,9 @@ Turma 2017
 - [Aula 01](https://www.slideshare.net/renatosousafilho/curso-programao-web-com-ruby-on-rails-aula-01)
 - [Aula 03](https://www.slideshare.net/renatosousafilho/curso-programao-web-com-ruby-on-rails-aula-03)
 
+### Instalando o Ruby on Rails
+- [GoRails](https://gorails.com/setup/ubuntu/17.04)
+
 ### Professor
 Renato Filho,
 - [GitHub](github.com/renatosousafilho)
