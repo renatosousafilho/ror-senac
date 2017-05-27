@@ -6,8 +6,8 @@ for i in (1..20)
 end
 
 # usando each
-(1..20).each do |number|
-	puts number
+(1..20).each do |i|
+	puts i
 end
 
 # usando each inline
