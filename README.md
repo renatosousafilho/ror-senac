@@ -13,6 +13,12 @@ Turma 2017
 ### Instalando o Ruby on Rails
 - [GoRails](https://gorails.com/setup/ubuntu/17.04)
 
+### Primeiros passos com Git e GitHub
+- [Try Git](https://try.github.io/levels/1/challenges/1)
+- [Video Aula - Loiane](https://www.youtube.com/watch?v=UMhskLXJuq4)
+- [Video Aulas - Rodrigo Branas](https://www.youtube.com/watch?v=C18qzn7j4SM)
+
+
 ### Professor
 Renato Filho,
 - [GitHub](github.com/renatosousafilho)
