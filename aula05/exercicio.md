@@ -1,11 +1,13 @@
-## Crie uma classe Book com os atributos title, publication_year
+## Crie uma classe Book 
+- Defina que a classe possua os atributos `title` e `publication_year`
+- Implemente o método construtor recebendo `title` e `publication_year` como parametros e fazendo a atribuição de forma correta.
 
 ## Crie uma classe BookManager
 - Defina um método construtor que inicialize o atributo @books
 - Defina um método `#add` que receba um objeto Book como parametro e adicione na array @books
 - Defina um método `#search` que receba um parametro title e que procure o livro de acordo com este parametro. Se encontrar o livro retorne o objeto, senão retorne o objeto `nil`
 - Defina o método remover que recebo `title` como parametro e remova o mesmo caso ele exista.
-- Defina o método #list_titles que retorne uma array APENAS com os titulos de cada livro.
+- Defina o método #list_titles que retorne uma array *APENAS* com os titulos de cada livro.
 
 ## Crie uma classe BookUI 
 - Defina o construtor que instancie um objeto de instância @book_manager
