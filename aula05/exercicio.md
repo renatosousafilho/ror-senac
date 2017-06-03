@@ -26,3 +26,6 @@
 ## Crie o arquivo `main.rb`
 - Neste arquivo controle o fluxo da execução do programa usando as classes anteriores para que o usuário possa fazer todas as operações possíveis enquanto o mesmo não entrar com a opção `5`. 
 
+## Entrega
+
+- Criar um repositório no GitHub com os çodigo do trabalho e enviar o link no grupo do Telegram até o dia 10/06.
