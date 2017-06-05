@@ -18,8 +18,8 @@ Turma 2017
 - [Video Aula - Loiane](https://www.youtube.com/watch?v=UMhskLXJuq4)
 - [Video Aulas - Rodrigo Branas](https://www.youtube.com/watch?v=C18qzn7j4SM)
 
-### Trabalho da primeira avaliação
-- [Trabalho](https://github.com/renatosousafilho/ror-senac/blob/master/trabalho-01.md)
+### Trabalhos
+- [Primeira Avaliação](https://github.com/renatosousafilho/ror-senac/blob/master/trabalho-01.md)
 
 ### Professor
 Renato Filho,
