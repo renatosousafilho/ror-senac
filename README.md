@@ -19,7 +19,7 @@ Turma 2017
 - [Video Aulas - Rodrigo Branas](https://www.youtube.com/watch?v=C18qzn7j4SM)
 
 ### Trabalho da primeira avaliação
-- (Trabalho)[]
+- [Trabalho](https://github.com/renatosousafilho/ror-senac/blob/master/trabalho-01.md)
 
 ### Professor
 Renato Filho,
