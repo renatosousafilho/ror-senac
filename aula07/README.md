@@ -1,6 +1,20 @@
 ### Agenda
 
 - Instalando o MySQL
+```
+sudo apt-get install mysql-server
+```
 - Criando nossa primeiro modelo
+```
+rails g model Book title publication_year:date
+```
 - Executando as migrations
-- Validações
+```
+rake db:create
+rake db:migrate
+```
+- Como definir Validações
+
+```
+validates_presence_of :title
+```
