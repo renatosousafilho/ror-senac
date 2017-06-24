@@ -4,6 +4,11 @@
 ```
 sudo apt-get install mysql-server libmysqlclient-dev
 ```
+- Criar um projeto Rails com MySQL
+```
+rails new biblioteca -d mysql
+```
+
 - Criando nossa primeiro modelo
 ```
 rails g model Book title publication_year:date
