@@ -2,7 +2,7 @@
 
 - Instalando o MySQL
 ```
-sudo apt-get install mysql-server
+sudo apt-get install mysql-server libmysqlclient-dev
 ```
 - Criando nossa primeiro modelo
 ```
