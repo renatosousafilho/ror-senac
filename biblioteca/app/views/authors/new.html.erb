@@ -1,0 +1,24 @@
+<h1>Novo autor</h1>
+
+<% if @author.errors.any? %>
+    <h2><%= @author.errors.count %> erros encontrado ao salvar autor:</h2>
+
+    <ul>
+    <% @author.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+<% end %>
+
+<%= form_for @author do |f| %>
+   <%= f.label :name, "Nome" %><br/>
+   <%= f.text_field :name %>
+
+   <br/>
+   <%= f.label :birthdate, "Data de nascimento" %><br/>
+   <%= f.date_field :birthdate %>
+
+   <br/>
+   <%= f.submit "Salvar" %>
+
+<% end %>

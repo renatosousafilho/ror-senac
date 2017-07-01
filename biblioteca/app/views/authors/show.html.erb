@@ -1,0 +1,11 @@
+<h1><%= @author.name %></h1>
+
+<ul>
+<% if @author.books.empty? %>
+  <p>Este autor não possui nenhum livro cadastrado.</p>
+<% else %>
+  <% @author.books.each do |book|%>
+    <li><%= book.title %>
+  <% end %>
+  </ul>
+<% end %>

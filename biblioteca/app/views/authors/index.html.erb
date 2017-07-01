@@ -1,0 +1,22 @@
+<h1>Lista de Autores</h1>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Nome</th>
+    <th>Data de Nascimento</th>
+    <th></th>
+  </tr>
+
+
+    <% @authors.each do |author| %>
+      <tr>
+        <td><%= author.id %></td>
+        <td><%= author.name %></td>
+        <td><%= author.birthdate %></td>
+        <td><%= link_to "Detalhes", author_path(author.id) %></td>
+      </tr>
+    <% end %>
+</table>
+
+<%= link_to "Novo autor", new_author_path %>
