@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   post 'authors' => 'authors#create'
   get 'author/new' => 'authors#new', as: :new_author
   get "author/:id" => 'authors#show', as: :author
+  get "author/:id/edit" => 'authors#edit', as: :edit_author
+  patch "author/:id" => "authors#update"
+  delete "author/:id" => "authors#destroy"
 
   get 'books' => 'books#index'
 
