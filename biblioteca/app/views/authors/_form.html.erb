@@ -8,15 +8,25 @@
     </ul>
 <% end %>
 
-<%= form_for @author do |f| %>
-   <%= f.label :name, "Nome" %><br/>
-   <%= f.text_field :name %>
+<%= form_for(@author, class: 'form-horizontal') do |f| %>
+    <div class="form-group">
+     <%= f.label :name, "Nome", class: "col-sm-3 control-label" %>
+     <div class="col-sm-9">
+       <%= f.text_field :name, class: 'form-control' %>
+     </div>
+    </div>
 
-   <br/>
-   <%= f.label :birthdate, "Data de nascimento" %><br/>
-   <%= f.date_field :birthdate %>
+    <div class="form-group">
+       <%= f.label :birthdate, "Data de nascimento", class: "col-sm-3 control-label" %>
+       <div class="col-sm-9">
+         <%= f.date_field :birthdate, class: 'form-control' %>
+       </div>
+    </div>
 
-
-   <br/>
-   <%= f.submit "Salvar" %>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <%= f.submit "Salvar", class: "btn btn-primary" %>
+        <%= link_to "Voltar", authors_path, class: "btn btn-default" %>
+      </div>
+    </div>
 <% end %>

@@ -1,8 +1,13 @@
 <h1>Lista de Autores</h1>
 
-<%= flash[:notice] %>
+<% if flash[:notice] %>
+<div class="alert alert-success">
+  <%= flash[:notice] %>
+</div>
+<% end %>
 
-<table>
+
+<table class="table table-striped">
   <tr>
     <th>#</th>
     <th>Nome</th>
@@ -23,4 +28,8 @@
     <% end %>
 </table>
 
-<%= link_to "Novo autor", new_author_path %>
+<div class="row">
+  <%= will_paginate @authors %>
+</div>
+
+<%= link_to "Novo autor", new_author_path, class: "btn btn-primary" %>
