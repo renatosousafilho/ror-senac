@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   delete "author/:id" => "authors#destroy"
 
   get 'books' => 'books#index'
+  root to: "home#index"
 
 
 

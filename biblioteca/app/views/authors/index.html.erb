@@ -6,7 +6,6 @@
 </div>
 <% end %>
 
-
 <table class="table table-striped">
   <tr>
     <th>#</th>
@@ -14,18 +13,16 @@
     <th>Data de Nascimento</th>
     <th></th>
   </tr>
-
-
-    <% @authors.each do |author| %>
-      <tr>
-        <td><%= author.id %></td>
-        <td><%= author.name %></td>
-        <td><%= author.birthdate %></td>
-        <td><%= link_to "Detalhes", author_path(author.id) %></td>
-        <td><%= link_to "Editar", edit_author_path(author.id) %></td>
-        <td><%= link_to "Deletar", author_path(author.id), method: :delete, data: {confirm: "Voce realmente deseja apagar este autor?"} %></td>
-      </tr>
-    <% end %>
+  <% @authors.each do |author| %>
+  <tr>
+    <td><%= author.id %></td>
+    <td><%= author.name %></td>
+    <td><%= author.birthdate %></td>
+    <td><%= link_to "Detalhes", author_path(author.id) %></td>
+    <td><%= link_to "Editar", edit_author_path(author.id) %></td>
+    <td><%= link_to "Deletar", author_path(author.id), method: :delete, data: {confirm: "Voce realmente deseja apagar este autor?"} %></td>
+  </tr>
+  <% end %>
 </table>
 
 <div class="row">
