@@ -1,6 +1,6 @@
 # Ruby on Rails - SENAC
 
-Turma 2017
+Turma 2017 - Sábado
 
 ### Planejamento
 
