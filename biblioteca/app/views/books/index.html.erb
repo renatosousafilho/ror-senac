@@ -4,13 +4,18 @@
   <tr>
     <th>Titulo</th>
     <th>Ano de Publicação</th>
+    <td></td>
+    <td></td>
   </tr>
 
   <% @books.each do |book| %>
   <tr>
     <td><%= book.title %></td>
     <td><%= book.publication_year %></td>
+    <td><%= I18n.l book.created_at, format: :short %></td>
+    <td><%= I18n.l book.updated_at %></td>
     <td><%= link_to book.author.name, author_path(book.author.id) %></td>
+
   </tr>
   <% end %>
 </table>

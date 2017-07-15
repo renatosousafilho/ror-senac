@@ -13,9 +13,9 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="<%= "active" if current_page?(root_path) %>"><%= link_to "Início", root_path %></li>
-        <li class="<%= "active" if current_page?(authors_path) %>"><%= link_to "Autores", authors_path %></li>
-        <li class="<%= "active" if current_page?(books_path) %>"><%= link_to "Livros", books_path %></li>
+        <li class="<%= active_home %>"><%= link_to "Início", root_path %></li>
+        <li class="<%= active_authors%>"><%= link_to "Autores", authors_path %></li>
+        <li class="<%= active_books %>"><%= link_to "Livros", books_path %></li>
       </ul>
     </div>
   </div>

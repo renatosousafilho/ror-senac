@@ -1,4 +1,4 @@
-<h1>Lista de Autores</h1>
+<h1><%= I18n.t(:list_authors) %></h1>
 
 <% if flash[:notice] %>
 <div class="alert alert-success">
@@ -17,7 +17,9 @@
   <tr>
     <td><%= author.id %></td>
     <td><%= author.name %></td>
-    <td><%= author.birthdate %></td>
+    <td><%= I18n.l author.birthdate unless author.birthdate.nil? %></td>
+    <td><%= I18n.l author.updated_at %></td>
+    <td><%= I18n.l author.created_at %></td>
     <td><%= link_to "Detalhes", author_path(author.id) %></td>
     <td><%= link_to "Editar", edit_author_path(author.id) %></td>
     <td><%= link_to "Deletar", author_path(author.id), method: :delete, data: {confirm: "Voce realmente deseja apagar este autor?"} %></td>
