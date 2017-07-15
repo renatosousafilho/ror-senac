@@ -11,8 +11,8 @@ Professor: Renato Filho
 |10/06|Insiter (Evento)|✓|
 |17/06|Criando o primeiro projeto Rails/Git e GitHub|✓|
 |24/06|ActiveRecord: Camada de Modelo e Migrations|✓|
-|01/07|ActionController: Camada de Controllers e Rotas
-|08/07|ActionView: Camada de Visão
+|01/07|ActionController: Camada de Controllers e Rotas|✓|
+|08/07|ActionView: Camada de Visão|✓|
 |15/07|Layouts, Internacionalização e Helpers
 |22/07|Upload de arquivos com CarrierWave
 |29/07|Aplicando camada de autenticação com Devise
