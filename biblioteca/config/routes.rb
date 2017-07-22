@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   delete "author/:id" => "authors#destroy"
 
   get 'books' => 'books#index'
+  get 'book/new' => 'books#new', as: :new_book
+  post 'books' => 'books#create'
+  get 'book/:id/edit' => 'books#edit', as: :edit_book
+  patch "books/:id" => "books#update", as: :book
+  delete "books/:id" => "books#destroy"
+  # resources :books
   root to: "home#index"
 
 

@@ -1,0 +1,38 @@
+<% if @book.errors.any? %>
+<h2><%= @book.errors.count %> erros encontrado ao salvar livro:</h2>
+
+<ul>
+  <% @book.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for @book, html: {class: 'form-horizontal'} do |f| %>
+  <div class="form-group">
+    <%= f.label :title, class: 'col-sm-3 control-label' %>
+    <div class="col-sm-9">
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :publication_year, class: 'col-sm-3 control-label' %>
+    <div class="col-sm-9">
+      <%= f.text_field :publication_year, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :author_id, class: 'col-sm-3 control-label' %>
+    <div class="col-sm-9">
+      <%= f.select :author_id, options_to_author, { prompt: "Selecione um autor" } %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-12 col-sm-offset-3">
+      <%= f.submit "Salvar", class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

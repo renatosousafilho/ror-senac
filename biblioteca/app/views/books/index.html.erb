@@ -1,21 +1,23 @@
 <h1>Lista de Livros</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
     <th>Titulo</th>
     <th>Ano de Publicação</th>
-    <td></td>
-    <td></td>
+    <th>Autor</th>
+    <th></th>
   </tr>
 
   <% @books.each do |book| %>
   <tr>
     <td><%= book.title %></td>
     <td><%= book.publication_year %></td>
-    <td><%= I18n.l book.created_at, format: :short %></td>
-    <td><%= I18n.l book.updated_at %></td>
     <td><%= link_to book.author.name, author_path(book.author.id) %></td>
-
+    <td>
+      <%= link_to "Editar", edit_book_path(book.id), class: 'btn btn-xs btn-primary' %>
+    </td>
   </tr>
   <% end %>
 </table>
+
+<%= link_to("Novo livro", new_book_path, class: "btn btn-primary") %>
