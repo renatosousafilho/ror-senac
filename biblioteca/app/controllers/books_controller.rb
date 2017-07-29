@@ -1,6 +1,10 @@
 class BooksController < ApplicationController
   def index
-    @books = Book.all
+    if params[:search].present?
+      @books = Book.where("title like '%#{params[:search]}%'")
+    else
+      @books = Book.all
+    end
   end
 
   def new
