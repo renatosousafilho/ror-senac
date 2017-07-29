@@ -1,9 +1,9 @@
 class BooksController < ApplicationController
   def index
     if params[:search].present?
-      @books = Book.where("title like '%#{params[:search]}%'")
+      @books = Book.where("title like '%#{params[:search]}%'").paginate(page: params[:page], per_page: 2)
     else
-      @books = Book.all
+      @books = Book.paginate(page: params[:page], per_page: 2)
     end
   end
 
