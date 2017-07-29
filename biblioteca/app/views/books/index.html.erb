@@ -1,9 +1,13 @@
 <h1>Lista de Livros</h1>
 
-<div class="row">
+<div class="col-sm-6">
 <%= form_tag books_path, method: :get do %>
-  <%= text_field_tag :search %>
-  <%= submit_tag "Pesquisar" %>
+  <div class="input-group">
+  <%= text_field_tag :search, params[:search], class: 'form-control' %>
+  <span class="input-group-btn">
+    <%= submit_tag "Pesquisar", class: 'btn btn-primary' %>
+  </span>
+  </div>
 <% end %>
 </div>
 
