@@ -4,6 +4,7 @@
 <p>Ano de Publicação: <%= @book.publication_year %></p>
 <p>Resumo: <%= @book.resume %></p>
 <p>Total de páginas: <%= @book.total_pages %></p>
+<p><%= image_tag @book.cover.url %></p>
 
 <%= link_to "Voltar", books_path, class: 'btn btn-primary' %>
 <%= link_to "Editar", edit_book_path(@book.id), class: 'btn btn-primary' %>
