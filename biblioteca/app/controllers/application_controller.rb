@@ -7,4 +7,9 @@ class ApplicationController < ActionController::Base
   def set_locale
      I18n.locale = params[:lang] || I18n.default_locale
   end
+
+  rescue_from CanCan::AccessDenied do |exception|
+     redirect_to "/",
+       notice: "Você não tem permissão para acessar essa pagina"
+  end
 end

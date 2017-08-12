@@ -38,6 +38,7 @@
     <td><%= link_to "Editar", edit_author_path(author.id), class: 'btn btn-xs btn-success' %></td>
     <td><%= link_to "Deletar", author_path(author.id), method: :delete,
         data: {confirm: "Voce realmente deseja apagar este autor?"}, class: 'btn btn-xs btn-danger' %></td>
+
   </tr>
   <% end %>
 </table>
@@ -45,5 +46,6 @@
 
 <%= will_paginate @authors %>
 
-
+<% if can?(:authors, :new) %>
 <%= link_to "Novo autor", new_author_path, class: "btn btn-primary" %>
+<% end %>

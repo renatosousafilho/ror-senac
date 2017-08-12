@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  authorize_resource class: :books
+
   def index
     if params[:search].present?
       @books = Book.where("title like '%#{params[:search]}%'").paginate(page: params[:page], per_page: 2)
