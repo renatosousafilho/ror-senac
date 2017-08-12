@@ -17,6 +17,24 @@
         <li class="<%= active_authors%>"><%= link_to "Autores", authors_path %></li>
         <li class="<%= active_books %>"><%= link_to "Livros", books_path %></li>
       </ul>
+
+      <ul class="nav navbar-nav pull-right">
+        <% if user_signed_in? %>
+          <li>
+            <a href="#"><%= current_user.email %></a>
+          </li>
+          <li>
+            <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to 'Entrar', new_user_session_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+
     </div>
   </div>
 </nav>
