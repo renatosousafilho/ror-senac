@@ -1,0 +1,18 @@
+<h1>Lista de Reservas</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Livro</th>
+    <th>Reservado por</th>
+    <th>Data</th>
+  </tr>
+
+  <% @bookings.each do |booking| %>
+    <tr>
+      <td><%= booking.book.title %></td>
+      <td><%= booking.user.email %></td>
+      <td><%= booking.reserved_to %></td>
+    </tr>
+  <% end %>
+
+</table>

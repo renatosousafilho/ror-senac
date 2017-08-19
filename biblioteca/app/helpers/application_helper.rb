@@ -14,4 +14,8 @@ module ApplicationHelper
   def active_books
     class_active if controller.controller_name == "books"
   end
+
+  def active_bookings
+    class_active if controller.controller_name == "bookings"
+  end
 end
