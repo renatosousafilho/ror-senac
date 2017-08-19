@@ -16,3 +16,8 @@
   <% end %>
 
 </table>
+
+<%= will_paginate @bookings %>
+
+<%= link_to "Nova reserva", new_booking_path,
+  class: 'btn btn-primary' %>

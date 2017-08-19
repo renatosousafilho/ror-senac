@@ -1,0 +1,19 @@
+<% if @booking.errors.any? %>
+<h2><%= @booking.errors.count %> erros encontrado ao salvar livro:</h2>
+<% end %>
+
+<%= form_for(@booking) do |f| %>
+  <% if current_user.role == "admin" %>
+    <%= f.label :user_id, "Usuário" %>
+    <%= f.select :user_id, options_to_user, prompt: "Selecione um usuário"  %>
+  <% end %>
+
+  <%= f.label :book_id, "Livro" %>
+  <%= f.select :book_id, options_to_book, prompt: "Selecione um livro"  %>
+
+
+  <%= f.label :reserved_to %>
+  <%= date_select("booking", "reserved_to") %>
+
+  <%= f.submit "Salvar", class: 'btn btn-primary' %>
+<% end %>
