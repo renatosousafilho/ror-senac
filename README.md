@@ -18,6 +18,11 @@ Turma 2017 - Sábado
 - [Video Aula - Loiane](https://www.youtube.com/watch?v=UMhskLXJuq4)
 - [Video Aulas - Rodrigo Branas](https://www.youtube.com/watch?v=C18qzn7j4SM)
 
+### Gems Utilizadas
+- carrierwave
+- devise
+- cancancan
+
 ### Trabalhos
 - [Primeira Avaliação](https://github.com/renatosousafilho/ror-senac/blob/master/trabalho-01.md)
 
