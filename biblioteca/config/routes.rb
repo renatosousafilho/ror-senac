@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'bookings' => 'bookings#index'
   post 'bookings' => 'bookings#create'
   get 'bookings/new', as: :new_booking

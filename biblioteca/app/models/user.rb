@@ -9,4 +9,8 @@ class User < ApplicationRecord
   def admin?
     role == "admin"
   end
+
+  def to_s
+    self.email
+  end
 end
