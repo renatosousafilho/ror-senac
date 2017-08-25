@@ -8,25 +8,13 @@
 </ul>
 <% end %>
 
-<%= form_for @author, html: { class: 'form-horizontal' } do |f| %>
-<div class="form-group">
-  <%= f.label :name, "Nome", class: "col-sm-3 control-label" %>
-  <div class="col-sm-9">
-    <%= f.text_field :name, class: 'form-control' %>
-  </div>
-</div>
+<%= simple_form_for @author, html: { class: 'form-horizontal' }, wrapper: :horizontal_form do |f| %>
 
-<div class="form-group">
-  <%= f.label :birthdate, "Data de nascimento", class: "col-sm-3 control-label" %>
-  <div class="col-sm-9">
-    <%= f.date_field :birthdate, class: 'form-control' %>
-  </div>
-</div>
+<%= f.input :name %>
+<%= f.input :gender %>
+<%= f.input :birthdate %>
 
-<div class="form-group">
-  <div class="col-sm-12">
-    <%= f.submit "Salvar", class: "btn btn-primary" %>
-    <%= link_to "Voltar", authors_path, class: "btn btn-default" %>
-  </div>
-</div>
+
+<%= f.submit "Salvar", class: "btn btn-primary" %>
+<%= link_to "Voltar", authors_path, class: "btn btn-default" %>
 <% end %>
