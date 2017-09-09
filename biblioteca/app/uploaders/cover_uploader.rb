@@ -9,7 +9,7 @@ class CoverUploader < CarrierWave::Uploader::Base
   end
 
   def default_url(*args)
-    "default-book.jpg"
+    [version_name, "default-book.jpg"].compact.join('_')
   end
 
   version :thumb do
